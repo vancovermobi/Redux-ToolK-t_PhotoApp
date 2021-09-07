@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACG,AAAD,qBAAS,CAAC;EACR,aAAa,EAAE,IAAI;CACpB;;AAEA,AAAD,oBAAQ,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,MAAM;EACrB,gBAAgB,EAAE,IAAI;CASvB;;AAbA,AAMC,oBANM,GAMF,GAAG,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EAEZ,aAAa,EAAE,MAAM;EACrB,cAAc,EAAE,MAAM;CACvB",
-    "sources": [
-        "RandomPhoto.scss"
-    ],
-    "names": [],
-    "file": "RandomPhoto.css"
-}
