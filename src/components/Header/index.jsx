@@ -7,8 +7,8 @@ import "./Header.scss";
 const Header = (props) => {
   return (
     <header className="header">
-      <Container>
-        <Row className="justify-content-between">
+      <Container className="header__container">
+        <Row className="justify-content-between header__row">
           <Col xs="auto">
             <a className="header__link header__title"
                 href="#"
@@ -19,10 +19,15 @@ const Header = (props) => {
             </a>
           </Col>
           <Col xs="auto">
-            <NavLink className="header__link"
+            <NavLink className="header__link header__link--project"
                         exact to="/photos"
                         activeClassName="header__link--active"
                 >Redux Project
+            </NavLink>
+            <NavLink className="header__link header__link--signin"
+                        exact to="/sign-in"
+                        activeClassName="header__link--active"
+                >Sign In
             </NavLink>
           </Col>
         </Row>

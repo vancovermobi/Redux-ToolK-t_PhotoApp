@@ -31,7 +31,7 @@ function MainPage(props) {
       <Banner title="Your awesome photos" backgroundUrl={Images.PINK_BG} />
 
       <Container className="text-center">
-        <div>
+        <div style={{ marginBottom: '0.5rem' , fontSize:'1.5rem'}}>
           <Link to="photos/add">Add new photo</Link>
         </div>
         <PhotoList>

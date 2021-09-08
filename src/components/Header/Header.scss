@@ -1,7 +1,20 @@
 .header{ 
-    padding: 1rem 0;
-    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
 
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(226, 226, 226);
+    &__container{
+        // position: relative;
+        // display: flex;
+    }
+    &__row{            
+        // display: flex;
+        // justify-content: space-between;
+    }
     &__title{
         font-weight: bold;
     }
@@ -14,6 +27,13 @@
             text-decoration: none;
             // color: var(--primary);
             color: deeppink;
+        }
+
+        &--project{
+            padding-right: 2rem;
+        }
+        &--signin{
+            
         }
     }
  }

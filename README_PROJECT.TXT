@@ -201,5 +201,68 @@ function Todo() {
  3. folder build : surge
 
 Cach 2: sh ./deploy-surge.sh
+# Build reactjs app with production mode 
+       npm run build
+
+# Move to build folder
+       cd build
+
+# Clone index.html into 200.html
+       cp index.html 200.html
+
+# Start deploying via Surge
+# The command means deploy current folder to domain paul-photo-app.surge.sh
+        surge . paul-photo-app.surge.sh
+==================================
+## API : Axios : npm install --save axios query-string
+try {
+   const url = 'https://.........';
+   const response = await  axios.get( url );
+   console.log( response );
+} catch( error ) {
+   console.log('Failed to fecth products: ' , error);
+}
+- inteceptors
+- cancel requests
+- auto tranform JSON data.
+* Tổ chức API module: thiết lập httpClient và httprequest
+- Thêm comon headers: content-type,....
+- Attach thêm token và xử lý expired token
+- Xử lý lỗi chung
+* Tổ chức file - folder
+src
+|__api
+|    |__axiosClient.js     : http client for our website
+|    |__productApi.js    : all apis of product resources
+|    |__categoryApi.js   
+|    |__userApi.js
+|    |__ ....
+|
+|__components
+|__features
+|__...
+|
+|
+|__App.js
+Mỗi một file API sẽ bao gồm những API liên quan tới resource đó
+-GET /products  # lấy danh sách products
+-GET /products?categoryId=123&page=1  # lọc product với params
+-GET /products/:productId  # lấy productId
+-POST /products  # Tạo một product mới 
+-PATCH /products/:productId  # Cập nhật product có ID là productId
+-DELETE /products/:productId  # Xóa product có ID = productId
+==================================
+## Auth :
+- Firebase : photo-app
+- FirebaseUI React Components : npm install --save react-firebaseui 
+1. Do npm uninstall firebase
+2. npm clear cache --force
+3. npm i firebase@^8.10.0 --save
+npm install axios
+ =================================
+Terminal :
++ Powerlevel10k : theme for Zsh
+npm ohmyzsh
+
     
 
